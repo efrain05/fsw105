@@ -8,7 +8,7 @@ if(3 === 3){
     console.log("is the length")
 }
 
-if(cat === dog){
+if("cat" === "dog"){
     console.log("print")
 }else {
     console.log("not the same")
@@ -16,8 +16,31 @@ if(cat === dog){
 
 //Bronze Medal
 
-var name = "Bobby"
-var age = 12
+var person = {
+    name = "Bobby",
+    age = 12
+};
+if(person.age >= 18) {
+    console.log("is allowed")
+}else{
+    console.log("not allowed")
+}
+
+if(person.name === "B"){
+    console.log("is allowed")
+}else{
+    console.log("not allowed")
+}
+
+if(person.name === "B" >= 18){
+    console.log("is allowed")
+}else {
+    console.log("not allowed")
+}
+
+
+
+
 
 if(age > 18){
     console.log("Bobby is allowed to go to the movie")
