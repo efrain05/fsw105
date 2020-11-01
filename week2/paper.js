@@ -4,7 +4,7 @@ function whoWins(isThereKryptonite,enemyName)
 {
 if(isThereKryptonite)
 {
-    return "Superman beats " + enemyame + ", of course";
+    return "Superman beats " + enemyName + ", of course";
 }
 
 else{
