@@ -62,11 +62,11 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
 
 // 0-100 loop
 
-for(var i=0; i < 101; i++){
+for(var i = 0; i < 101; i++){
 if([i] % 2 === 0 ){
  console.log([i] + " even")
 }else{
-    if([i] % 3 === 0){
+    if([i] % 11 === 0){
         console.log([i] + " odd")
     }
 }
