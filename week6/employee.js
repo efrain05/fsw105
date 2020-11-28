@@ -1,13 +1,16 @@
-let employees = []
+let employees = [
+  
+]
+      
 
-function Employee(name,jobTitle,salary,status){
+function Employee(name,jobTitle,salary, status = "Full Time"){
     this.name = name
     this.jobTitle = jobTitle
     this.salary = salary
     this.status = status
 }
 
-Employee.prototype.contract = function(){
+Employee.prototype.printEmployeeForm = function(){
    console.log(` Name: ${this.name}, Job Title: ${this.jobTitle}, Salary: ${this.salary}, Status: ${this.status}`) 
 }
 
@@ -16,6 +19,7 @@ let wide = new Employee("Mike Evans", "Wide Receiver", "16.5M/yr", "Full-time")
 let football = new Employee("Tom Brady", "Quarterback", "25M/yr", "Contract")
 
 
-bBall.contract();
-wide.contract();
-football.contract();
+bBall.printEmployeeForm();
+wide.printEmployeeForm();
+football.printEmployeeForm();
+employees.unshift(bBall,wide,football)
